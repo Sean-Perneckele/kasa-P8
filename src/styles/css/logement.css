@@ -1,0 +1,34 @@
+.logement {
+  text-align: center;
+  justify-content: center;
+  margin: 0px 100px;
+}
+
+.un {
+  display: flex;
+}
+.un .deux {
+  display: flex;
+  flex-direction: column;
+}
+.un .deux .title {
+  font-size: 36px;
+  color: #FF6060;
+}
+.un .deux .location {
+  font-size: 18px;
+  color: #FF6060;
+  display: flex;
+}
+.un .deux .tags {
+  display: flex;
+}
+.un .deux .tags .tags--content {
+  color: white;
+  background-color: green;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+/*# sourceMappingURL=logement.css.map */

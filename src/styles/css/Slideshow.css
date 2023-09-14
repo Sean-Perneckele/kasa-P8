@@ -1,0 +1,35 @@
+.slideshow {
+  margin: 10px 0px;
+}
+.slideshow div {
+  width: 100%;
+  height: 415px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.slideshow div .vector1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 20px;
+}
+.slideshow div .vector2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+}
+.slideshow div .numerotation {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 30px;
+  color: white;
+}
+
+/*# sourceMappingURL=Slideshow.css.map */

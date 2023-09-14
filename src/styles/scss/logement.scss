@@ -1,0 +1,58 @@
+.logement {
+    text-align: center;
+    justify-content: center;
+
+    margin: 0px 100px;
+}
+
+.un {
+    display: flex ;
+
+
+.deux {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        font-size: 36px;
+        color: #FF6060;
+        
+    }
+
+    .location {
+        font-size: 18px;
+        color: #FF6060;
+        display: flex;
+    }
+
+    .tags {
+            display: flex;
+        .tags--content{
+            color: white;
+            background-color: green;
+
+            border-radius: 10px;
+            margin: 5px;
+            padding: 5px 10px;
+        }
+    }
+}
+
+.evaluation{
+
+    .utilisateur{
+
+
+        .utilisateur--nom{
+
+        }
+
+        .utilisateur--image{
+
+        }
+    }
+}
+
+
+
+}
