@@ -21,9 +21,11 @@
   text-decoration: none;
 }
 .thumbnail__article p {
-  color: black;
+  color: white;
   width: 50%;
   font-size: 18px;
+  text-align: initial;
+  margin: 10px;
 }
 
 @media (max-width: 767px) {
