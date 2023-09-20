@@ -47,3 +47,31 @@
     }
     
 }
+
+@media (max-width: 767px) {
+
+
+    .slideshow {
+    
+    
+        div {
+            
+            height: 330px;
+            border-radius: 15px;
+    
+            .vector1 {
+                width: 12px;
+                height: 20px;
+            }
+    
+            .vector2 {
+                width: 12px;
+                height: 20px;
+            }
+    
+           
+        }
+        
+    }
+
+}

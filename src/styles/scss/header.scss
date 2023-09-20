@@ -35,3 +35,43 @@ nav {
 
     
     }
+
+    .acceuil.underline {
+        text-decoration: underline;
+      }
+
+      .propo.underline {
+        text-decoration: underline;
+      }
+            
+    
+      @media (max-width: 767px) {
+        nav {
+            
+            img {
+                height: 45px;
+                width: 145px;
+            }
+        
+            div {
+               
+        
+               
+        
+                    .acceuil {
+                        font-size: 12px;
+                    }
+        
+                    .propo {
+                       font-size: 12px;
+                    }
+            }
+        
+            
+            }
+
+      }
+      
+      
+      
+      

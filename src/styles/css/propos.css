@@ -4,5 +4,19 @@
   align-items: center;
   margin: 0px 100px 30px;
 }
+.propos--image {
+  height: 223px;
+  width: 100%;
+  margin: 0px 100px 30px;
+  background-image: url("../../asset/ImageS2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /*# sourceMappingURL=propos.css.map */

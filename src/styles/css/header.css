@@ -25,4 +25,25 @@ nav div .propo {
   margin-left: 50px;
 }
 
+.acceuil.underline {
+  text-decoration: underline;
+}
+
+.propo.underline {
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  nav img {
+    height: 45px;
+    width: 145px;
+  }
+  nav div .acceuil {
+    font-size: 12px;
+  }
+  nav div .propo {
+    font-size: 12px;
+  }
+}
+
 /*# sourceMappingURL=header.css.map */

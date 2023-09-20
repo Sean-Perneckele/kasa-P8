@@ -6,11 +6,11 @@ import { useParams } from 'react-router-dom';
 function Star() {
     const { id } = useParams();
     const article = données.find((element) => element.id === id);
-    const rating = parseInt(article.rating); // Convertissez la chaîne "rating" en nombre
+    const rating = parseInt(article.rating); 
     const totalStars = 5;
 
     return (
-        <div>
+        <div className='stars'>
             {Array.from({ length: totalStars }).map((_, index) => (
                 <span key={index}>
                     {index < rating ? (

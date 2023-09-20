@@ -7,16 +7,9 @@ function Home() {
   return (
     <body>
     <div className="home">
-   
 
       <Banner />
       <Thumbnail />
-
-      
-
-        
-
-
 
     </div>
     </body>

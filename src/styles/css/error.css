@@ -2,5 +2,40 @@
   text-align: center;
   justify-content: center;
 }
+.error--img {
+  margin-top: 100px;
+  width: 300px;
+  height: 130px;
+}
+.error--content {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: #ff6060;
+  font-size: 36px;
+}
+.error--link {
+  color: #ff6060;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 767px) {
+  .error--img {
+    margin-top: 80px;
+    width: 200px;
+    height: 80px;
+  }
+  .error--content {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-size: 18px;
+  }
+  .error--link {
+    font-size: 14px;
+    margin-bottom: 80px;
+  }
+}
 
 /*# sourceMappingURL=error.css.map */

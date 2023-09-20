@@ -25,3 +25,15 @@ footer {
         }
     }  
 }
+
+@media (max-width: 767px) {
+
+    footer {    
+        div {
+            p{   
+                margin-top: 20px;
+                font-size: 12px;
+            }
+        }  
+    }
+}

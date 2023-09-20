@@ -1,6 +1,6 @@
 .collapse {
     display: flex;
-    justify-content: center;
+    
     flex-direction: column;
     width: 80%;
    margin: 10px 0px;
@@ -40,7 +40,7 @@
     }
     &--content {
         font-size: 18px;
-        padding: 0px;
+        padding: 20px 20px 0px 20px;
     
         z-index: 0;
         position: relative;
@@ -52,11 +52,13 @@
         opacity: 1;
         transform-origin: top;
         transform: scaleY(0); 
-        transition: transform 0.3s ease-in-out;
+        transition: transform 0.5s ease-in-out, max-height 0.5s ease-in-out;
         max-height: 0;
-        overflow: hidden; /* Pour masquer tout contenu dépassant */
-        transition: max-height 0.3s ease-in-out;
+        overflow: hidden; 
         margin-bottom: 0px;
+
+        display: flex;
+        flex-direction: column;
 
         p{
             margin-bottom: 5px;
@@ -64,9 +66,36 @@
     
         &.active {
             transform: scaleY(1); 
-            max-height: 1000px; /* Une valeur suffisamment grande pour permettre au contenu de s'étendre complètement */
+            max-height: 1000px; 
             margin-bottom: 10px ;
             padding: 20px;
+            transition: transform 0.5s ease-in-out, max-height 0.5s ease-in-out;
         }
     }
+}
+
+@media (max-width: 767px) {
+  .collapse {
+  
+    &--title {
+     
+      p {
+
+       
+        font-size: 13px;
+      
+      }
+
+      img {
+        height: 10px;
+        width: 16px;
+      }
+      
+}
+
+&--content {
+  font-size: 12px;
+ 
+}
+}
 }

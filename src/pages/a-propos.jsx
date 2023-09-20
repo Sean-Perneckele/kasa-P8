@@ -1,6 +1,7 @@
 import '../styles/css/propos.css'
 import Collapse from '../composant/Collapse'
 
+
 const contenu1 = "les annonces postées sur Kasa garantissent une fiabilité total. Les photos sont conformes aux logements, et toutes les informations sont regulièrement vérifiées par nos équipes. ";
 const contenu2 = "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme";
 const contenu3 = "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme";
@@ -11,6 +12,8 @@ function Propos() {
 
     return (
       <div className="propos"> 
+
+        <div className="propos--image"></div>
         
         <Collapse titre="Fiabilité"  contenu={contenu1}/>
         <Collapse titre="Respect" contenu={contenu2} />

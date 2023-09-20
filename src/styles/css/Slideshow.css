@@ -32,4 +32,19 @@
   color: white;
 }
 
+@media (max-width: 767px) {
+  .slideshow div {
+    height: 330px;
+    border-radius: 15px;
+  }
+  .slideshow div .vector1 {
+    width: 12px;
+    height: 20px;
+  }
+  .slideshow div .vector2 {
+    width: 12px;
+    height: 20px;
+  }
+}
+
 /*# sourceMappingURL=Slideshow.css.map */

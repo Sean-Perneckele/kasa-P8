@@ -1,58 +1,153 @@
 .logement {
-    text-align: center;
     justify-content: center;
-
     margin: 0px 100px;
-}
-
-.un {
-    display: flex ;
-
-
-.deux {
-    display: flex;
-    flex-direction: column;
-
-    .title {
-        font-size: 36px;
-        color: #FF6060;
-        
-    }
-
-    .location {
-        font-size: 18px;
-        color: #FF6060;
+  
+    .contente {
+      display: flex ;
+      justify-content: space-between;
+      margin-bottom: 10px;
+  
+      &__info {
         display: flex;
-    }
-
-    .tags {
-            display: flex;
-        .tags--content{
+        flex-direction: column;
+  
+        .title {
+          font-size: 36px;
+          color: #FF6060;
+          margin: 0px;
+        }
+  
+        .location {
+          font-size: 18px;
+          color: #FF6060;
+          display: flex;
+          margin: 0px;
+          margin-bottom: 10px;
+        }
+  
+        .tags {
+          display: flex;
+          
+          .tags--content {
             color: white;
-            background-color: green;
-
+            background-color: #FF6060;
+            font-size: 14px;
             border-radius: 10px;
             margin: 5px;
-            padding: 5px 10px;
+            padding: 2px 30px;
+          }
         }
+      }
+  
+      .evaluation {
+        .utilisateur {
+          display: flex;
+          align-items: center;
+  
+          .utilisateur--nom {
+            font-size: 18px;
+            color: #FF6060;
+          }
+  
+          .utilisateur--image {
+            height: 64px;
+            width: 64px;
+            border-radius: 50px;
+            margin: 10px;
+          }
+        }
+  
+        .star {
+          .stars {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
     }
-}
-
-.evaluation{
-
-    .utilisateur{
-
-
-        .utilisateur--nom{
-
-        }
-
-        .utilisateur--image{
-
-        }
+  
+    .information {
+      display: flex;
+      
+      &__description {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+      }
+      
+      &__equipement {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+      }
     }
-}
+  
+    @media (max-width: 767px) {
+      .contente {
+        display: flex;
+        flex-direction: column;
+  
+        &__info {
+          .title {
+            font-size: 18px;
+          }
+  
+          .location {
+            font-size: 14px;
+          }
+  
+          .tags {
+            .tags--content {
+              font-size: 10px;
+            }
+          }
+        }
+  
+        .evaluation {
 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+          .utilisateur {
+            .utilisateur--nom {
+              font-size: 14px;
+            }
+  
+            .utilisateur--image {
+              height: 32px;
+              width: 32px;
+            }
+          }
+  
+          .star {
+            .stars {
+              display: flex;
+              justify-content: space-between;
+              width: 100px;              
 
-
-}
+                img {
+                    height: 13px;
+                    width: 13px;
+                }
+            }
+          }
+        }
+      }
+  
+      .information {
+        display: flex;
+        flex-direction: column;
+  
+        &__description {
+          font-size: 13px;
+          width: 100%;
+        }
+  
+        &__equipement {
+          font-size: 13px;
+          width: 100%;
+        }
+      }
+    }
+  }
