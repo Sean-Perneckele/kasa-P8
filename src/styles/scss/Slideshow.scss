@@ -1,77 +1,61 @@
 .slideshow {
-    
     margin: 10px 0px;
+    position: relative;
 
-    div {
-        
+    .arrow.vector1,
+    .arrow.vector2 {
+        position: absolute;
+        top: 41%;
+        cursor: pointer;
+        z-index: 3;
+        width: 45px; 
+        height: 80px; 
+    }
+
+    .arrow.vector1 {
+        left: 20px;
+       
+    }
+
+    .arrow.vector2 {
+        right: 20px;
+    }
+
+    .slide-image {
         width: 100%;
         height: 415px;
+        position: relative;
+        z-index: 1;
 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        border-radius: 30px;
-
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-
-        .vector1 {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-             
-            margin-left: 20px;
-
-        }
-
-        .vector2 {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-           
-            margin-right: 20px;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            object-fit: cover;
         }
 
         .numerotation {
-            display: flex;
-            
-            justify-content: center;
-            align-items: end;
-
-            margin-bottom: 30px;
-
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2; /* Mettez au-dessus de l'image */
             color: white;
         }
     }
-    
 }
 
 @media (max-width: 767px) {
-
-
     .slideshow {
-    
-    
-        div {
-            
+        .slide-image {
             height: 330px;
             border-radius: 15px;
-    
-            .vector1 {
-                width: 12px;
-                height: 20px;
-            }
-    
-            .vector2 {
-                width: 12px;
-                height: 20px;
-            }
-    
-           
         }
-        
-    }
 
+        .arrow.vector1,
+        .arrow.vector2 {
+            width: 12px;
+            height: 20px;
+        }
+    }
 }
