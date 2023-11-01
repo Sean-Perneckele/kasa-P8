@@ -56,14 +56,14 @@
   display: flex;
 }
 .logement .information__description {
-  width: 50%;
+  width: 70%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .logement .information__equipement {
-  width: 50%;
+  width: 70%;
   display: flex;
-  justify-content: center;
+  justify-content: end;
 }
 @media (max-width: 767px) {
   .logement .contente {
@@ -108,10 +108,12 @@
   .logement .information__description {
     font-size: 13px;
     width: 100%;
+    justify-content: center;
   }
   .logement .information__equipement {
     font-size: 13px;
     width: 100%;
+    justify-content: center;
   }
 }
 

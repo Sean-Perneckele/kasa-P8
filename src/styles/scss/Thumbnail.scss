@@ -1,7 +1,7 @@
 .thumbnail {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 50px;
     justify-content: center;
     background-color: #f6f6f6;
     border-radius: 20px;
@@ -9,13 +9,14 @@
     margin-bottom: 50px;
   
     &__article {
-      width: 300px;
-      height: 300px;
+      width: 360px;
+      height: 360px;
       background-color: gray;
       border-radius: 10px;
       display: flex;
       align-items: flex-end;
       text-decoration: none;
+      
   
       .thumbnail__image-container {
         display: flex;
@@ -23,11 +24,24 @@
         align-items: center;
         width: 100%;
         height: 100%;
+        position: relative; /* Ajoutez cette ligne */
   
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
+          border-radius: 10px;
+          
+          object-fit: cover;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.3));
+          z-index: 1;
           border-radius: 10px;
         }
       }
@@ -39,6 +53,7 @@
         text-align: initial;
         margin: 10px;
         position: absolute;
+        z-index: 2;
       }
     }
   }

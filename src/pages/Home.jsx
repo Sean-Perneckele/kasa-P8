@@ -5,14 +5,14 @@ import Thumbnail from '../composant/Thumbnail'
 
 function Home() {
   return (
-    <body>
+    <main>
     <div className="home">
 
       <Banner />
       <Thumbnail />
 
     </div>
-    </body>
+    </main>
   )
 }
 

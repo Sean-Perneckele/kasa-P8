@@ -1,5 +1,5 @@
 import '../styles/css/logement.css'
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import données from '../kasa.json'
 import Slideshow from '../composant/Slideshow';
 import Star from '../composant/star';
@@ -8,19 +8,17 @@ import Collapse from '../composant/Collapse'
 function Logement() {
 
   const { id } = useParams();
-
-  
-
   const article = données.find((element) => element.id === id);
+
+  if (!article) {
+    return <Navigate to="/error" replace />;
+  }
 
 
   const equipments = article.equipments.map((equipments, index) => (
     <p className='equipments' key={index}>{equipments}</p>
   ));
 
-  if (!article) {
-    return <div>Logement introuvable</div>;
-  }
 
   return (
     <div className="logement">
@@ -54,9 +52,6 @@ function Logement() {
           <div className='information__equipement'><Collapse titre="Equipement"  contenu={equipments}/></div>          
         </div>    
     </div>
- 
-        
-    
   );
 }
   

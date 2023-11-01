@@ -2,7 +2,7 @@ import '../styles/css/Collapse.css'
 import vector from '../asset/Vector.png'
 import { useState } from 'react'
 
-function Collapse({ titre, contenu }) {
+function Collapse({ titre, contenu, keys }) {
   const [isActive, setIsActive] = useState(false);
 
   const toggleContent = () => {

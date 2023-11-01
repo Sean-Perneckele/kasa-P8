@@ -14,8 +14,12 @@ function Slideshow() {
     // Masquer la numérotation si une seule image
     if (article.pictures.length === 1) {
       const numerotationElement = document.querySelector('.numerotation');
+      const arrow1 = document.querySelector('.vector1')
+      const arrow2 = document.querySelector('.vector2')
       if (numerotationElement) {
         numerotationElement.style.display = 'none';
+        arrow1.style.display = 'none';
+        arrow2.style.display = 'none';
       }
     }
   }, [article.pictures.length]);
